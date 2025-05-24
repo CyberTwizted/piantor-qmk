@@ -1,7 +1,7 @@
-Added tap dance to outer keys, see the updated keymap below. Added KC_TRNS to outer columns for subsequent layers so they have access to ctrl and shift. 
-Ideally, in a QMK flash, the tap dance would be custom so that the hold is instant, and the tap + hold tapping term can be set manually.
-The Numbers and Symbols layers could probably be combined as well since we now have access to shift on all layers.
-  - This could also open up the possibilty to put ctrl on the thumb key to avoid having to create a custom tap dance for shift and ctrl
+Added tap dance to outer keys, see the updated keymap below. \Added KC_TRNS to outer columns for subsequent layers so they have access to ctrl and shift. 
+\Ideally, in a QMK flash, the tap dance would be custom so that the hold is instant, and the tap + hold tapping term can be set manually. \I was able to implement this in VIAL by setting the tap dance to On Tap : LShift, On tap + hold : LCtrl
+The Numbers and Symbols layers could probably be combined since we now have access to shift on all layers.
+  - This could also open up the possibilty to put a tap dance on the unused layer, in this case tap would be delete and tap and hold would be ctrl.
 
 
 Custom qmk tapdance example:
