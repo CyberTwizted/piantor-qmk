@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = LAYOUT_split_3x6_3(
   KC_LALT,     KC_Q,   KC_W,   KC_F,   KC_P,   KC_B,       KC_J,   KC_L,   KC_U,     KC_Y,   KC_SCLN,  KC_RALT,
   KC_TD(8),    HM_A,   HM_R,   HM_S,   HM_T,   KC_G,       KC_M,   HM_N,   HM_E,     HM_I,   HM_O,     TD(9),
-  KC_LGUI,     KC_Z,   KC_X,   KC_C,   KC_D,   KC_V,       KC_K,   KC_H,   KC_COMM,  KC_DOT, KC_SLSH,  KC_NO,
+  KC_LGUI,     KC_Z,   KC_X,   KC_C,   KC_D,   KC_V,       KC_K,   KC_H,   KC_COMM,  KC_DOT, KC_SLSH,  TG(7),
                 MediaL_ESC, NavL_SPC, MouseL_TAB,             SymL_ENT, NumL_BSPC, FuncL_DEL
 ),
 
@@ -141,6 +141,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS, KC_F11, KC_F4, KC_F5, KC_F6, KC_SLCK,     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
   KC_TRNS, KC_F10, KC_F1, KC_F2, KC_F3, KC_PAUS,     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
                      KC_APP, KC_SPC, KC_TAB,            KC_NO, KC_NO, KC_NO
+)
+
+
+// Added as a separate vial file
+// Layer 7: Qwerty
+[7] = LAYOUT_split_3x6_3(
+  KC_TRNS, KC_Q,  KC_W,  KC_E,  KC_R,  KC_T,      KC_Y,  KC_U,  KC_I,    KC_O,    KC_P,    KC_TRNS,
+  KC_TRNS, KC_A,  KC_S,  KC_D,  KC_F,  KC_G,      KC_H,  KC_J,  KC_K,    KC_L,    KC_SCLN, KC_TRNS,
+  KC_TRNS, KC_Z,  KC_X,  KC_C,  KC_V,  KC_B,      KC_N,  KC_M,  KC_COMM, KC_DOT,  KC_SLSH, KC_TRNS
+               KC_TRNS, KC_TRNS, KC_TRNS,            KC_TRNS, KC_TRNS, KC_TRNS
 )
 
 };
